@@ -132,6 +132,10 @@ namespace KojosKitchen
                 Console.WriteLine("Con 2 empleados: {0} clientes, el {1}%\n", longWait2, longWait2 * 100 / twoWorkers.Count);
                 Console.WriteLine("Con 3 empleados: {0} clientes, el {1}%\n", longWait3, longWait3 * 100 / threeWorkers.Count);
 
+                Console.Write("[q/quit] para salir...");
+                var input = Console.ReadLine().ToLower(); ;
+                if (input == "q" || input == "quit") break;
+                Console.WriteLine();
             }
         }
     }
